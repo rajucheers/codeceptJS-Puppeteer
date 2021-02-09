@@ -19,8 +19,8 @@ exports.config = {
 	  seleniumArgs: {
 		javaArgs: [
 		  '-Dwebdriver.edge.driver=<path_to_driver>'
-		]
-	  }
+		    ]
+	    }
     }
   },
   helpers: {
