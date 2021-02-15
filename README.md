@@ -19,4 +19,4 @@
 - Image comparison
 - Mocking
 
-![Happy-Coding](http://www.google.com.au/images/nav_logo7.png)
+![Happy-Coding](https://www.shutterstock.com/image-vector/development-vector-icon-743169709)
