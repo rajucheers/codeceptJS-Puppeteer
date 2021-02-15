@@ -19,4 +19,4 @@
 - Image comparison
 - Mocking
 
-![Happy-Coding](https://www.shutterstock.com/image-vector/development-vector-icon-743169709)
+![Happy-Coding](https://dribbble.com/shots/2888226-1800-Free-Minimal-Icon-Pack-20x20)
