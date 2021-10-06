@@ -24,9 +24,10 @@ exports.config = {
     }
   },
   helpers: {
-    Puppeteer: {
+    playwright: {
       url: 'https://www.adp.com',
-      browser: 'chrome',
+      browser: 'firefox',
+      waitForNavigation: "networkidle0",
 	  //marionette: true,
 	  osPlatform: 'Windows',
       osVersion: '10',
