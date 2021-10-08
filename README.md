@@ -1,22 +1,18 @@
-# codeceptJS - puppeteer boilerplate
-## To run the tests:
-1. Build package.json
-2. node run.js
+# codeceptJS - playwright
 
-## Reference Links
-[CodeceptJS](https://codecept.io/ "https://codecept.io/")
+## To build and run the tests:
+1. Navigate to root folder ./codceptjs-puppeteer
+2. npm install
+3. npm audit fix - (to make sure any fixes required while building, observed the project is building differently for macOS and windows)
+
+## To run the tests:
+1. node run.js
 
 ## Prerequisites
 1. Install Node.JS version > 12
 2. Javascript
 
----
-
-## Addressed most common automation issues
-- Test flakiness
-- Parallelization
-- Cross browser with native apps
-- Image comparison
-- Mocking
+## Reference Links
+[CodeceptJS](https://codecept.io/ "https://codecept.io/")
 
 ![JS](C:\Users\raju.datla\Downloads\iconfinder_nodejs-512_339733)
