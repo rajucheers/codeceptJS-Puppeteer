@@ -7,8 +7,12 @@ Scenario('TEST CASE NO: 11 :: When I travel to https://boardgamegeek.com/advsear
   I.fillField({css: "#advsearch-title"}, "Harry Potter and the Sorcerer's Stone Trivia Game");
   I.fillField({css: "#advsearch-yearpublished-min"}, "1999");
   I.fillField({css: "#advsearch-yearpublished-max"}, "2000");
-  I.selectOption({css: "#advsearch-min-playing-time"}, "1");
-  I.selectOption({css: "#advsearch-max-playing-time"}, "5");
+  I.executeScript(function() {
+    document.querySelector("#advsearch-min-playing-time").value = "15";
+  });
+  I.executeScript(function() {
+    document.querySelector("#advsearch-max-playing-time").value = "90";
+  });
   I.click({css: "[value='Submit']"});
   I.waitForElement({css: ".collection_bggrating"}, 60);
   I.say(await I.grabTextFrom({css: "#results_objectname1"}));

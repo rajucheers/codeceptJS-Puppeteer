@@ -10,6 +10,7 @@ Scenario('TEST CASE NO: 9 :: When I navigate to https://www.spicejet.com/', asyn
   I.waitForElement({css: "#ControlGroupSearchView_AvailabilitySearchInputSearchView_ButtonSubmit"}, 60);
   I.click({css: ".book_flight"});
   I.click({css: "#ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTXT"});
+  I.wait(2);
   I.fillField({css: "#ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTXT"}, "AGR");
   I.wait(2);
   I.fillField({css: "#ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1_CTXT"}, "JAI");
@@ -23,4 +24,5 @@ Scenario('TEST CASE NO: 9 :: When I navigate to https://www.spicejet.com/', asyn
   I.click({css: "#ControlGroupSearchView_AvailabilitySearchInputSearchView_FamilyAndFriends"});
   I.click({css: "[name='ControlGroupSearchView$AvailabilitySearchInputSearchView$ButtonSubmit']"});
   I.say(await I.grabPopupText());
+  I.acceptPopup();
 });

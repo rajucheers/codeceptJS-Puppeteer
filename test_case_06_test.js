@@ -18,4 +18,5 @@ Scenario('TEST CASE NO: 6 :: When I navigate to https://www.spicejet.com/', asyn
     I.say("I see radiobutton options with name :: " + await I.grabAttributeFrom({css: "(//*[@id='travelOptions']/*/input)["+j+"]"}, "value"));
     I.click({css: "(//*[@id='travelOptions']/*/input)["+j+"]"});
   }
+  I.click({css: ".ok-btn.float-right"});
 });

@@ -9,6 +9,7 @@ Scenario('TEST CASE NO: 1 :: When I navigate to https://www.cleartrip.com/', asy
   I.click({xpath: "//*[contains(@aria-label, 'Mon Oct 11 2021')]/*[1]"});
   I.click({xpath: "//*[contains(@aria-label, 'Mon Oct 18 2021')]/*"});
   I.pressKey("Tab");
+  I.wait(2);
   I.selectOption("(//*[contains(@class, 'bc-neutral-100 bg-transparent')])[1]", "3");
   I.selectOption("(//*[contains(@class, 'bc-neutral-100 bg-transparent')])[2]", "2");
   I.selectOption("(//*[contains(@class, 'bc-neutral-100 bg-transparent')])[3]", "1");

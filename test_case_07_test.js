@@ -9,4 +9,5 @@ Scenario('TEST CASE NO: 7 :: When I navigate to https://www.spicejet.com/', asyn
   I.selectOption({css: "[name='ControlGroupSearchView$AvailabilitySearchInputSearchView$DropDownListPassengerType_ADT']"},"1");
   I.selectOption({css: "[id='ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_INFANT']"},"4");
   I.say(await I.grabPopupText());
+  I.acceptPopup();
 });

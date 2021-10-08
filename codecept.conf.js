@@ -25,7 +25,7 @@ exports.config = {
   },
   helpers: {
     playwright: {
-      url: 'https://www.adp.com',
+      url: '',
       browser: 'firefox',
       waitForNavigation: "networkidle0",
 	  //marionette: true,
@@ -34,11 +34,14 @@ exports.config = {
       host: '127.0.0.1',
       port: 4444,
 	  show: true,
-      restart: false,
+    restart: true,
+    args: [
+      '--ignore-certificate-errors'
+  ],
 	  //waitforInterval: 500,
       desiredCapabilities: {
         chromeOptions: {
-          args: [ /*"--headless",*/ "--disable-gpu", "--window-size=1920x1680", "--no-sandbox" ]
+          args: [ /*"--headless",*/ "--disable-gpu", "--window-size=1920x1680", "--no-sandbox", "--incognito" ]
         }
       }
     }
