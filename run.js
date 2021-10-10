@@ -11,7 +11,7 @@ const opts = { steps: true };
 
   try {
     await codecept.bootstrap();
-    codecept.loadTests('./*_test.js');
+    codecept.loadTests('./tests/*_test.js');
     // run tests
     await codecept.run();
   } catch (err) {
@@ -21,6 +21,7 @@ const opts = { steps: true };
     await codecept.teardown();
   }    
 })();
+
 
  
 /*  const { Workers, event } = require('codeceptjs');
